@@ -76,7 +76,6 @@ public class Day2 {
         return 0; // No successful removal made it increasing
     }
 
-
     // Verifies if removing one level from the array makes it strictly decreasing
     public static int verifyArrayDecrementAfterLevelDrop(List<Long> input) {
         for (int i = 0; i < input.size() - 1; i++) {

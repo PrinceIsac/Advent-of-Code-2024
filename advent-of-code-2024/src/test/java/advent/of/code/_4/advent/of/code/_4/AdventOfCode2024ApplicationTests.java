@@ -48,4 +48,15 @@ class AdventOfCode2024ApplicationTests {
 
 	}
 
+	@Test
+	public void dayThreeTests() {
+		String input = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))";
+
+		Assertions.assertEquals(161, Day3.solutionOne(input),"The expected sum is 161");
+
+		//Test with test data
+		Assertions.assertEquals(157621318, Day3.solutionOne(InputClass.dayThreeInput()),"The expected sum is 157621318");
+
+	}
+
 }
