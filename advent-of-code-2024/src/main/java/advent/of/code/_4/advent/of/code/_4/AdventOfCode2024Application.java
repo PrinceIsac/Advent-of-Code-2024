@@ -26,6 +26,8 @@ public class AdventOfCode2024Application {
 //		//Solution Two
 //		System.out.println(Day1.solution2(InputClass.dayOneInput().getFirst(), InputClass.dayOneInput().getLast()));
 
-		System.out.println(Day2.solution1(InputClass.dayTwoInput()));
+//		System.out.println(Day2.solution1(InputClass.dayTwoInput()));
+
+		System.out.println(Day2.solution2(InputClass.dayTwoInput()));
 
 	}}

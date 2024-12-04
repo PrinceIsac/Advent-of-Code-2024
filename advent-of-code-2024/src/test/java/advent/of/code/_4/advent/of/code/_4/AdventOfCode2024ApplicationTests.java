@@ -1,5 +1,6 @@
 package advent.of.code._4.advent.of.code._4;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
@@ -26,6 +27,7 @@ class AdventOfCode2024ApplicationTests {
 		stringList.add("8 6 4 4 1");
 		stringList.add("1 3 6 7 9");
 
+
 		//We expect the answer to be 2
 		AtomicLong atomicLong = new AtomicLong(2);
 
@@ -34,6 +36,15 @@ class AdventOfCode2024ApplicationTests {
 		//Solution to the quiz
 		AtomicLong atomicLong2 = new AtomicLong(369);
 		Assert.isTrue(Day2.solution1(InputClass.dayTwoInput()).get() == atomicLong2.get(),"The expected value is 369");
+
+		//Solution 2 Tests
+		//We expect the answer to be 4
+		AtomicLong atomicLong3 = new AtomicLong(4);
+		Assertions.assertEquals(atomicLong3.get(), Day2.solution2(stringList).get(),"The expected value is 4");
+
+		//Solution 2 Actual Data Result
+		AtomicLong atomicLong4 = new AtomicLong(428);
+		Assertions.assertEquals(atomicLong4.get(), Day2.solution2(InputClass.dayTwoInput()).get(),"The expected value is 428");
 
 	}
 
